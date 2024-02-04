@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.my-portfolio{
+    background: linear-gradient(to left,rgb(0,0,0,0.6),black);
+    height: 100%;
+}
+.navbar{
+    display: flex;
+
+}
+.navbar-buttons{
+    background: linear-gradient(to left,rgb(0,0,0,0.6),black);
+    width: 100%;
+    border-radius: 10px;
+}
+.navbar-buttons li{
+    margin-top: 30px;
+    list-style: none;
+    margin-left: 430px;
+    margin-bottom: 20px;
+}
+.navbar-buttons li button{
+    border: none;
+    background: none;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s;
+}
+.navbar-buttons li button:hover{
+    cursor: pointer;
+    color: #2978b5;
+    scale: 1.05;
+}
+
+.main-section{
+    display: flex;
+    margin-top: 60px;
+}
+
+.hero-section{
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.hero-heading{
+
+}
+.hero-heading h1{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.hero-heading h1 span{
+    color: #2978b5;
+}
+
+.hero-heading-1{
+    margin-top: 50px;
+}
+.hero-heading-1 h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+}
+.hero-heading-1 h1 span{
+    color: #2978b5;
+}
+.hero-para{
+    margin-top: 20px;
+    width: 800px;
+
+}
+.hero-para p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#545454;
+}
+
+.resume-button{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin-left: 100px;
+}
+.resume-button button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border: 2px solid #2978b5;
+    color: #2978b5;
+    transition: all 0.3s;
+}
+.resume-button button a{
+    text-decoration: none;
+    color: #2978b5;
+    font-weight: 500;
+    font-size: 20px;
+}
+.resume-button button a:hover{
+    color: white;
+}
+.resume-button button:hover{
+    scale: 1.05;
+    cursor: pointer;
+    background-color: #2978b5;
+    color: white;
+}
+
+.pic{
+    height: 500px;
+    margin-left: 150px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.pic img{
+    height: 400px;
+    width: 400px;
+
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: transform 0.5s;
+    filter: grayscale(60%);
+    filter: blur(0.5px);
+
+}
+.pic:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.project{
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    margin-top: 50px;
+}
+.project-heading{
+
+}
+.project-heading h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.project-buttons{
+    margin-top: 60px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    display: flex;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid white;
+}
+.work:hover{
+    cursor: pointer;
+}
+.work img{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    filter: grayscale(30%);
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to left,rgb(0,0,0,0.6),black);
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #0894ff;
+}    
+.layer h4{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 400;
+}
+.layer p{
+    border: 2px solid #0894ff;
+    padding: 4px ;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.work:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+.about-me{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+
+}
+.about-me-heading{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 113px;
+}
+.about-me-heading h1{
+    color: white;
+    font-weight: 700;
+}
+
+.about-me-hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-me-pic{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.about-me-pic img{
+    border-radius: 1000px;
+    height: 350px;
+    filter: grayscale(50%);
+}
+.about-me-pic img:hover{
+    filter: grayscale(30%);
+}
+.about-me-para{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+.about-me-para p{
+    color: rgb(230, 227, 227);
+    font-weight: 500;
+    font-size: 19px;
+    justify-content: center;
+    text-align: center;
+    width: 1100px;
+    margin-top: 20px;
+}
+
+
+
+.skills{
+    margin-top: 50px;
+}
+.skills-heading{
+    text-align: center;
+}
+.skills-heading h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.skill-list{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.skills-1{
+    border: 0.5px solid #1a1919;
+    background-color: #262525;
+    padding: 3px 3px 3px 3px;
+    
+}
+.skills-1 img{
+    height: 50px;
+    filter: grayscale(80%);
+}
+
+.contact-me{
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.contact-me-heading{
+
+}
+.contact-me-heading h1{
+    color: white;
+}
+.contact-name{
+    margin-top: 50px;
+    
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+.contact-name-1{
+
+}
+.contact-name-1 input{
+    background: none;
+    padding: 8px 8px;
+    width: 350px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    border: 0.5px solid white;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-message{
+
+}
+.contact-message input{
+    background: none;
+    font-weight: 600;
+    color: white;
+    padding: 8px 8px;
+    width: 350px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    border: 0.5px solid white;
+    margin-bottom: 15px;
+
+}
+
+.contact-button{
+
+}
+.contact-button button{
+    padding: 8px 118px;
+    border-radius:10px ;
+    font-size: 15px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.contact-buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+.contact-buttons-1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.contact-buttons-1 a img{
+    height: 50px;
+    margin-top: 7px;
+    margin-bottom: 100px;
+}
+.contact-buttons-2 a img{
+    height: 60px;
+    margin-bottom: 100px;
+}
+.line-11{
+    height: 1px;
+    width: 1500px;
+    background-color: #262525;
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width:1250px){
+    .pic{
+        display: none;
+    }
+    .navbar-buttons{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 25%;
+    }
+    .navbar-buttons li{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-section{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-section{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-para p{
+        color: white;
+        font-weight: 600;
+    }
+    .resume-button{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me{
+
+    }
+    .about-me-pic{
+        margin: 0;
+        margin-left: 150px;
+    }
+    .project{
+        
+    }
+    .project-buttons{
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:651px){
+    .navbar-buttons{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .navbar-buttons li{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .navbar-buttons li button{
+        margin: 0;
+        margin-left: 0px;
+    }
+    .about-me-hero{
+        display: flex;
+       text-align: center;
+        flex-direction: column;
+    }
+    .project-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .work-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-pic{
+        margin: 0;
+        margin-left: 50px;
+    }
+    .about-me-para{
+    margin-left: 50px;
+    }
+    .about-me-para p{
+    color: white;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    margin-top: 20px;
+    }
+    
+
+
+}
+@media only screen and (max-width:400px){
+    .hero-section{
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .hero-heading h1{
+        font-size: 32px;
+        text-align: center;
+
+    }
+    .hero-heading-1 h1{
+        font-size: 25px;
+    }
+    .hero-para{
+        width: 350px;
+    }
+    .hero-para p{
+        color: rgb(156, 152, 152);
+        margin-left: 10px;
+    }
+    .work img{
+        width: 350px;
+    }
+    .navbar-buttons{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .navbar-buttons li{
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+    .navbar-buttons li button{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .about-me-pic{
+        margin: 0;
+        margin-left: 20px;
+    }
+    .about-me-heading{
+        margin: 0;
+    }
+    .about-me-para{
+        margin-left: 20px;
+    }
+    .resume-button{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 150px;
+    }
+    .navbar{
+        display: flex;
+    
+    }
+    .about-me-heading{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .about-me-para p{
+        width: 300px;
+    }
+    .line-11{
+        width: 390px;
+    }
+}
